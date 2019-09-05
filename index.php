@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" >
 </head>
 
 <body>
@@ -18,7 +19,7 @@
 		<img id="liste-haut" src="img/arrow.png" />
 
 		<div id="liste-stations">
-			<?php for($i = 1; $i < 14; $i++){ ?>
+			<?php for($i = 1; $i <= 14; $i++){ ?>
 			<div class="station" <?php echo 'id="station-'.$i.'"'; ?>>
 				<img src="img/picto-station.png" />
 				<h2>Place de la République</h2>
