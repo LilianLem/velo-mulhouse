@@ -22,8 +22,7 @@
 		<div id="liste-haut-out"><img id="liste-haut" class="liste-fleche" src="img/arrow.png" /></div>
 
 		<div id="liste-stations">
-			<?php for($i = 1; $i <= 12; $i++){ ?>
-			<div class="station" <?php echo 'id="station-'.$i.'"'; ?>>
+			<div class="station" id="station-1">
 				<img src="img/picto-station.png" />
 				<div class="station-infos">
 					<h2>Place de la République</h2>
@@ -37,7 +36,171 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
+
+			<div class="station" id="station-2">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-3">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-4">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-5">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-6">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-7">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-8">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-9">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-10">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-11">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="station" id="station-12">
+				<img src="img/picto-station.png" />
+				<div class="station-infos">
+					<h2>Place de la République</h2>
+					<div class="station-dispo">
+						<div class="arceaux">
+							<p><span class="arceaux-compteur">5</span> arceaux</p>
+						</div>
+						<div class="velos">
+							<p><span class="velos-compteur">9</span> vélos</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div id="liste-bas-out"><img id="liste-bas" class="liste-fleche" src="img/arrow.png" /></div>
