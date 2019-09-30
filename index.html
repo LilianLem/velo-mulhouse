@@ -15,11 +15,15 @@
 	</header>
 
 	<main>
-		<p id="dark-mode-switcher">Dark mode</p>
+		<div id="fixed-top">
+			<p id="dark-mode-switcher">Dark mode</p>
 
-		<h1>Stations</h1>
+			<div class="center">
+				<h1>Stations</h1>
 
-		<div id="liste-haut-out"><img id="liste-haut" class="liste-fleche" src="img/arrow.png" /></div>
+				<img id="liste-haut" class="liste-fleche" src="img/arrow.png" />
+			</div>
+		</div>
 
 		<div id="liste-stations">
 			<div class="station" id="station-1">
@@ -203,26 +207,29 @@
 			</div>
 		</div>
 
-		<div id="liste-bas-out"><img id="liste-bas" class="liste-fleche" src="img/arrow.png" /></div>
+		<div id="fixed-bottom">
+			<div class="center">
+				<img id="liste-bas" class="liste-fleche" src="img/arrow.png" />
+				<p id="last-update">Dernière mise à jour : il y a <span class="last-update-timer">1 minute</span></p>
+			</div>
 
-		<p id="last-update">Dernière mise à jour : il y a 1 minute</p>
+			<nav>
+				<ul>
+					<li id="carte">
+						<img src="img/picto-map.png" />
+						<p>Carte</p>
+					</li>
+					<li id="liste">
+						<img src="img/picto-liste.png" />
+						<p>Liste</p>
+					</li>
+					<li id="favoris">
+						<img src="img/picto-favoris.png" />
+						<p>Favoris</p>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</main>
-
-	<nav>
-		<ul>
-			<li id="carte">
-				<img src="img/picto-map.png" />
-				<p>Carte</p>
-			</li>
-			<li id="liste">
-				<img src="img/picto-liste.png" />
-				<p>Liste</p>
-			</li>
-			<li id="favoris">
-				<img src="img/picto-favoris.png" />
-				<p>Favoris</p>
-			</li>
-		</ul>
-	</nav>
 </body>
 </html>
