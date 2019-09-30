@@ -1,0 +1,133 @@
+body {
+	margin: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+main {
+	margin-top: 133px; /* Pour compenser la taille de header qui est en position fixed */
+	margin-bottom: 55px; /* Idem pour le footer */
+	height: calc(100vh - 55px);
+}
+
+#fixed-top {
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	height: 85px;
+}
+
+.center {
+	text-align: center;
+}
+
+p#dark-mode-switcher {
+	position: absolute;
+	margin: 0;
+	top: 10px;
+	right: 10px;
+}
+
+main h1 {
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+}
+
+main img.liste-fleche {
+	display: block;
+	margin: 0 auto;
+	width: 22px;
+}
+
+main img#liste-haut {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+main #liste-stations {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 2.5vh;
+	width: 100%;
+}
+
+#liste-stations .station {
+	display: grid;
+	grid-template-columns: 47px auto;
+}
+
+.station > img {
+	width: 47px;
+}
+
+.station h2 {
+	margin: 0;
+}
+
+.station .station-dispo {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	column-gap: 5%;
+}
+
+#fixed-bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+p#last-update {
+	position: relative;
+	top: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+main img#liste-bas {
+	margin-top: 10px;
+}
+
+nav {
+	padding-top: 5px;
+	width: 100%;
+	height: 50px;
+	/*margin-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;*/
+}
+
+nav ul {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+}
+
+nav ul li img {
+	width: 25px;
+}
+
+nav ul li p {
+	margin: 0;
+}

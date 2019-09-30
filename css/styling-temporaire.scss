@@ -1,0 +1,101 @@
+$mainColor: #8f2b6d;
+
+@font-face {
+	font-family:"WeblySleek UI Semibold";
+	src: url("../fonts/weblysleekuisb.eot?") format("eot"),
+		 url("../fonts/weblysleekuisb.woff") format("woff"),
+		 url("../fonts/weblysleekuisb.ttf") format("truetype"),
+		 url("../fonts/weblysleekuisb.svg#WeblySleekUISemibold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--bg-color: #fff;
+	--sec-color: #000;
+	--reverse-bg-color: #323639;
+	--reverse-sec-color: #fff;
+}
+
+[dark-mode="true"] {
+	--bg-color: #323639;
+	--sec-color: #fff;
+	--reverse-bg-color: #fff;
+	--reverse-sec-color: #000;
+}
+
+* {
+	font-family: 'WeblySleek UI Semibold', sans-serif;
+}
+
+body {
+	border: 2px solid $mainColor;
+	color: var(--sec-color);
+}
+
+header {
+	background-color: $mainColor;
+}
+
+main {
+	background-color: var(--bg-color);
+}
+
+#fixed-top {
+	background-color: var(--bg-color);
+}
+
+p#dark-mode-switcher {
+	cursor: pointer;
+	font-size: 0.7rem;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: var(--reverse-bg-color);
+	color: var(--reverse-sec-color);
+	-webkit-transition: 0.25s ease-in-out;
+}
+
+main h1 {
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+main img#liste-haut {
+	transform: rotate(-90deg);
+}
+
+.station h2 {
+	font-size: 0.75rem;
+}
+
+.station-dispo .arceaux, .velos {
+	font-size: 0.5rem;
+	text-transform: uppercase;
+}
+
+.station-dispo .arceaux .arceaux-compteur, .velos-compteur {
+	font-size: 1.25rem;
+}
+
+#fixed-bottom {
+	background-color: var(--bg-color);
+}
+
+p#last-update {
+	font-size: 0.7rem;
+}
+
+main img#liste-bas {
+	transform: rotate(90deg);
+}
+
+nav {
+	background-color: $mainColor;
+}
+
+nav ul li p {
+	color: #fff;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
