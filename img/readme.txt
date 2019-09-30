@@ -1,0 +1,1 @@
+Les images dans ce dossier ont été exportées de la maquette Adobe XD ou récupérés directement des fichiers utilisés dans la maquette.
