@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/styles.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" >
-	<script type="text/javascript" src="scripts/dark-mode.js"></script>
+	<script type="text/javascript" src="js/dark-mode.js"></script>
 </head>
 
 <body>
