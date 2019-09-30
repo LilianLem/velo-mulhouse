@@ -1,0 +1,30 @@
+{
+  "name": "velo-mulhouse",
+  "version": "1.0.0",
+  "description": "Disponibilité en temps réel des stations VéloCité de Mulhouse avec une interface simple",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilianLem/velo-mulhouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilianLem/velo-mulhouse/issues"
+  },
+  "homepage": "https://github.com/LilianLem/velo-mulhouse#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
