@@ -1,0 +1,1 @@
+Le code CSS n'est pas valide W3C uniquement à cause des variables CSS qui ne sont pas reconnues.
