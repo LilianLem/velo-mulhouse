@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+	// Dark mode
 	document.getElementById("dark-mode-switcher").addEventListener("click", toggleDarkMode, false);
 	const mainHtml = document.documentElement;
 

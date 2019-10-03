@@ -2,10 +2,10 @@ const webpack = require("webpack");
 const path = require("path");
 
 let config = {
-  entry: "./src/js/dark-mode.js",
+  entry: "./src/scripts.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "./js/dark-mode.js"
+    filename: "./scripts.js"
   },
   module: {
     rules: [{
