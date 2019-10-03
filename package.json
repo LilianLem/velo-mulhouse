@@ -4,7 +4,12 @@
   "description": "Disponibilité en temps réel des stations VéloCité de Mulhouse avec une interface simple",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
   },
   "repository": {
     "type": "git",
