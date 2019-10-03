@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", async function(event) {
 	// Dark mode
 	document.getElementById("dark-mode-switcher").addEventListener("click", toggleDarkMode, false);
 	const mainHtml = document.documentElement;
@@ -28,4 +28,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			})
 		}
 	}
+
+    let etatStations = await callAPI();
+    console.log(etatStations);
 })
+
+/*
+Fonction qui appelle l'API
+*/
+async function callAPI(){
+    let rawEtatStations = await fetch('https://data.mulhouse-alsace.fr/api/records/1.0/search/?dataset=68224_stationsvelocite_jcdecaux_tempsreel&rows=40&facet=status&facet=contract_name&facet=name&timezone=Europe%2FBerlin');
+    return await rawEtatStations.json();
+}
