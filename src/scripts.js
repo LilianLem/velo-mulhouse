@@ -29,14 +29,23 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		}
 	}
 
-    let etatStations = await callAPI();
-    localStorage.setItem('etatStations', JSON.stringify(etatStations));
-    etatStationsCached = localStorage.getItem('etatStations');
+	var etatStations;
+	if(navigator.onLine) {
+    	etatStations = await callAPI();
+    	localStorage.setItem('etatStations', JSON.stringify(etatStations));
+    	document.getElementById("last-update").innerHTML = "Données mises à jour en temps réel";
+    	console.log("Call API réussi, résultat :");
+    }
+    else {
+    	etatStations = localStorage.getItem('etatStations');
+    	etatStations = JSON.parse(etatStations);
+    	document.getElementById("last-update").innerHTML = "Vous êtes hors ligne : affichage des données en cache";
+    	console.log("Appareil hors ligne, affichage des données en cache :");
+    }
+
     console.log(etatStations);
-    console.log(JSON.parse(etatStationsCached));
 
     let station = etatStations.records[0].fields;
-    console.log(station);
 
     for(var i=0;i<12;i++){
     	let station = etatStations.records[i].fields;
@@ -76,11 +85,11 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     }
 
     function insertInHTML(stationId,stationName,stationAvailableBikeStands,stationAvailableBikes) {
+    	console.log(stationId);
     	let stationDiv = document.getElementById("station-"+stationId);
     	stationDiv.getElementsByTagName("h2")[0].innerHTML = stationName;
     	stationDiv.getElementsByClassName("arceaux-compteur")[0].innerHTML = stationAvailableBikeStands;
 		stationDiv.getElementsByClassName("velos-compteur")[0].innerHTML = stationAvailableBikes;
-    	console.log(stationDiv);
     }
 })
 
