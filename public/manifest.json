@@ -1,0 +1,16 @@
+{
+  "short_name": "VML",
+  "name": "Velo Mulhouse Live",
+  "icons": [
+    {
+      "src": "img/picto-station.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": "/public/?source=pwa",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "/public/",
+  "theme_color": "#8f2b6d"
+}
