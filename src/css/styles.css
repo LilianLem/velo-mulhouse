@@ -58,7 +58,7 @@ main {
 #fixed-top {
 	position: fixed;
 	top: 50px;
-	width: 100%;
+	width: calc(100% - 4px);
 	height: 85px;
 	background-color: var(--bg-color);
 }
@@ -141,7 +141,7 @@ main #liste-stations {
 #fixed-bottom {
 	position: fixed;
 	bottom: 0;
-	width: 100%;
+	width: calc(100% - 4px);
 	background-color: var(--bg-color);
 }
 
