@@ -30,12 +30,13 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	}
 
     let etatStations = await callAPI();
+    localStorage.setItem('etatStations', JSON.stringify(etatStations));
+    etatStationsCached = localStorage.getItem('etatStations');
     console.log(etatStations);
+    console.log(JSON.parse(etatStationsCached));
 })
 
-/*
-Fonction qui appelle l'API
-*/
+/* Fonction qui appelle l'API */
 async function callAPI(){
     let rawEtatStations = await fetch('https://data.mulhouse-alsace.fr/api/records/1.0/search/?dataset=68224_stationsvelocite_jcdecaux_tempsreel&rows=40&facet=status&facet=contract_name&facet=name&timezone=Europe%2FBerlin');
     return await rawEtatStations.json();
