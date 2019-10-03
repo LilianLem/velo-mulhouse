@@ -41,6 +41,10 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     for(var i=0;i<12;i++){
     	let station = etatStations.records[i].fields;
     	let stationName = setStationName(station.name);
+    	let stationAvailableBikeStands = station.available_bike_stands;
+    	let stationAvailableBikes = station.available_bikes;
+
+    	insertInHTML(i+1,stationName,stationAvailableBikeStands,stationAvailableBikes);
     }
 
     function setStationName(rawName) {
@@ -69,6 +73,14 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     	nomStation = nomStation_words.join(' ');
 
     	return nomStation;
+    }
+
+    function insertInHTML(stationId,stationName,stationAvailableBikeStands,stationAvailableBikes) {
+    	let stationDiv = document.getElementById("station-"+stationId);
+    	stationDiv.getElementsByTagName("h2")[0].innerHTML = stationName;
+    	stationDiv.getElementsByClassName("arceaux-compteur")[0].innerHTML = stationAvailableBikeStands;
+		stationDiv.getElementsByClassName("velos-compteur")[0].innerHTML = stationAvailableBikes;
+    	console.log(stationDiv);
     }
 })
 
