@@ -8,9 +8,9 @@
       "sizes": "256x256"
     }
   ],
-  "start_url": "/public/?source=pwa",
+  "start_url": "/dist/?source=pwa",
   "background_color": "#fff",
   "display": "standalone",
-  "scope": "/public/",
+  "scope": "/dist/",
   "theme_color": "#8f2b6d"
 }

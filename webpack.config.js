@@ -4,7 +4,7 @@ const path = require("path");
 let config = {
   entry: "./src/js/dark-mode.js",
   output: {
-    path: path.resolve(__dirname, "./public"),
+    path: path.resolve(__dirname, "./dist"),
     filename: "./js/dark-mode.js"
   },
   module: {
