@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 			Array.from(document.getElementsByClassName('picto-station')).forEach(e=>{
 				e.setAttribute("src", "img/picto-station.png");
 			})
+
+			Array.from(document.getElementsByClassName('picto-arceau')).forEach(e=>{
+				e.setAttribute("src", "img/picto-arceau.png");
+			})
 		}
 
 		else {
@@ -25,6 +29,10 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 
 			Array.from(document.getElementsByClassName('picto-station')).forEach(e=>{
 				e.setAttribute("src", "img/dark-mode/picto-station.png");
+			})
+
+			Array.from(document.getElementsByClassName('picto-arceau')).forEach(e=>{
+				e.setAttribute("src", "img/dark-mode/picto-arceau.png");
 			})
 		}
 	}
