@@ -7,41 +7,19 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		if(mainHtml.hasAttribute("dark-mode")) {
 			mainHtml.removeAttribute("dark-mode");
 
-			Array.from(document.getElementsByClassName('liste-fleche')).forEach(e=>{
-				e.setAttribute("src", "img/arrow.png");
-			})
-
-			Array.from(document.getElementsByClassName('picto-station')).forEach(e=>{
-				e.setAttribute("src", "img/picto-station.png");
-			})
-
-			Array.from(document.getElementsByClassName('picto-arceau')).forEach(e=>{
-				e.setAttribute("src", "img/picto-arceau.png");
-			})
-
-			Array.from(document.getElementsByClassName('picto-velo')).forEach(e=>{
-				e.setAttribute("src", "img/picto-velo.png");
-			})
+			changeImgSrc("arrow",0);
+			changeImgSrc("picto-station",0);
+			changeImgSrc("picto-arceau",0);
+			changeImgSrc("picto-velo",0);
 		}
 
 		else {
 			mainHtml.setAttribute('dark-mode', 'true');
 
-			Array.from(document.getElementsByClassName('liste-fleche')).forEach(e=>{
-				e.setAttribute("src", "img/dark-mode/arrow.png");
-			})
-
-			Array.from(document.getElementsByClassName('picto-station')).forEach(e=>{
-				e.setAttribute("src", "img/dark-mode/picto-station.png");
-			})
-
-			Array.from(document.getElementsByClassName('picto-arceau')).forEach(e=>{
-				e.setAttribute("src", "img/dark-mode/picto-arceau.png");
-			})
-
-			Array.from(document.getElementsByClassName('picto-velo')).forEach(e=>{
-				e.setAttribute("src", "img/dark-mode/picto-velo.png");
-			})
+			changeImgSrc("arrow",1);
+			changeImgSrc("picto-station",1);
+			changeImgSrc("picto-arceau",1);
+			changeImgSrc("picto-velo",1);
 		}
 	}
 
@@ -68,6 +46,19 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     	let stationAvailableBikes = station.available_bikes;
 
     	insertInHTML(i+1,stationName,stationAvailableBikeStands,stationAvailableBikes);
+    }
+
+    function changeImgSrc(imageName,isDark) {
+    	if(isDark){
+			Array.from(document.getElementsByClassName(imageName)).forEach(e=>{
+				e.setAttribute("src", "img/dark-mode/"+imageName+".png");
+			})
+    	}
+    	else{
+			Array.from(document.getElementsByClassName(imageName)).forEach(e=>{
+				e.setAttribute("src", "img/"+imageName+".png");
+			})
+    	}
     }
 
     function setStationName(rawName) {
