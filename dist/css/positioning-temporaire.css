@@ -102,6 +102,11 @@ main #liste-stations {
   height: 1rem;
 }
 
+.station-dispo .picto-velo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 #fixed-bottom {
   position: fixed;
   bottom: 0;
