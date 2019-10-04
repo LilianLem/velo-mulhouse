@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     }
 
     function insertInHTML(stationId,stationName,stationAvailableBikeStands,stationAvailableBikes) {
-    	console.log(stationId);
     	let stationDiv = document.getElementById("station-"+stationId);
     	stationDiv.getElementsByTagName("h2")[0].innerHTML = stationName;
     	stationDiv.getElementsByClassName("arceaux-compteur")[0].innerHTML = stationAvailableBikeStands;
@@ -98,8 +97,10 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     }
 })
 
-/* Fonction qui appelle l'API */
-async function callAPI(){
-    let rawEtatStations = await fetch('https://data.mulhouse-alsace.fr/api/records/1.0/search/?dataset=68224_stationsvelocite_jcdecaux_tempsreel&rows=40&sort=-number&facet=status&facet=contract_name&facet=name&timezone=Europe%2FBerlin');
-    return await rawEtatStations.json();
+if(navigator.onLine){
+	/* Fonction qui appelle l'API */
+	async function callAPI(){
+	    let rawEtatStations = await fetch('https://data.mulhouse-alsace.fr/api/records/1.0/search/?dataset=68224_stationsvelocite_jcdecaux_tempsreel&rows=40&sort=-number&facet=status&facet=contract_name&facet=name&timezone=Europe%2FBerlin');
+	    return await rawEtatStations.json();
+	}
 }
