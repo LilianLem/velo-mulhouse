@@ -6,7 +6,12 @@ console.log('this is my custom service worker');
 
 // Routing
 workbox.routing.registerRoute(
-  new RegExp('/css|fonts|img|js/'),
+  new RegExp('/css|fonts|img/'),
+  workbox.strategies.cacheFirst()
+);
+
+workbox.routing.registerRoute(
+  new RegExp('/scripts.js/'),
   workbox.strategies.cacheFirst()
 );
 
@@ -19,15 +24,15 @@ workbox.routing.registerRoute(
 workbox.precaching.precacheAndRoute([
   {
     "url": "css/positioning-temporaire.css",
-    "revision": "f6379e11c6c87052d140d46140aebb52"
+    "revision": "33e541df6949abcae5f913c9b1cbae2e"
   },
   {
     "url": "css/styles.css",
-    "revision": "1f068bbf388375ba993aab05d92c720e"
+    "revision": "a749636428764ee25af5a4fc8c0b8832"
   },
   {
     "url": "css/styling-temporaire.css",
-    "revision": "0081b993d86189953e85622f735e129a"
+    "revision": "ba627b704572620e645fbcc1bfe83c3a"
   },
   {
     "url": "fonts/weblysleekuisb.eot",
@@ -35,7 +40,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "fonts/weblysleekuisb.svg",
-    "revision": "1fe2037dc4c6dd4c35e9d594a5780fed"
+    "revision": "7065a02e13237285681a6a87ab0a8020"
   },
   {
     "url": "fonts/weblysleekuisb.ttf",
@@ -54,8 +59,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "0cb5d2189374a2bf0f16a749097e0c69"
   },
   {
+    "url": "img/dark-mode/picto-arceau.png",
+    "revision": "724e22c15378357b0d543b85c1fcdf7c"
+  },
+  {
     "url": "img/dark-mode/picto-station.png",
     "revision": "e632421c1429ee02dee4c84bb90ff7e6"
+  },
+  {
+    "url": "img/dark-mode/picto-velo.png",
+    "revision": "3503a565b7e6d3b67c87ba3dab5c40ef"
   },
   {
     "url": "img/logo_small.png",
@@ -64,6 +77,10 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "img/logo.png",
     "revision": "2cc6c24f6e3d141ea9b60fcc1fd4c224"
+  },
+  {
+    "url": "img/picto-arceau.png",
+    "revision": "c00f59e17c2f784c473dd133c1e265e7"
   },
   {
     "url": "img/picto-favoris.png",
@@ -82,15 +99,15 @@ workbox.precaching.precacheAndRoute([
     "revision": "5f5be1f4bc7e1f64d4fe8c9e0f245712"
   },
   {
+    "url": "img/picto-velo.png",
+    "revision": "9b7a6ce9fdcf8e8b22a1c8d93cc83413"
+  },
+  {
     "url": "index.html",
-    "revision": "9d59e4f034c5bf4f7261847e72cd6118"
+    "revision": "5a85c7cbf53b1209314ff3b8188b7612"
   },
   {
-    "url": "js/dark-mode.js",
-    "revision": "5d97434b873a004abee8d1f8fea18f13"
-  },
-  {
-    "url": "js/scripts.js",
-    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+    "url": "scripts.js",
+    "revision": "8da5abc99ddf51b92596ebb9432f2851"
   }
 ]);

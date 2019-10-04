@@ -6,7 +6,12 @@ console.log('this is my custom service worker');
 
 // Routing
 workbox.routing.registerRoute(
-  new RegExp('/css|fonts|img|js/'),
+  new RegExp('/css|fonts|img/'),
+  workbox.strategies.cacheFirst()
+);
+
+workbox.routing.registerRoute(
+  new RegExp('/scripts.js/'),
   workbox.strategies.cacheFirst()
 );
 
