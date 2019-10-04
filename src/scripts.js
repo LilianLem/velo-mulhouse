@@ -45,8 +45,6 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 
     console.log(etatStations);
 
-    let station = etatStations.records[0].fields;
-
     for(var i=0;i<12;i++){
     	let station = etatStations.records[i].fields;
     	let stationName = setStationName(station.name);
