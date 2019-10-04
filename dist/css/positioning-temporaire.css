@@ -86,6 +86,22 @@ main #liste-stations {
   column-gap: 5%;
 }
 
+.station-dispo .arceaux, .velos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column-gap: 20px;
+}
+
+.station-dispo .arceaux .arceaux-compteur, .velos-compteur {
+  margin: 0;
+}
+
+.station-dispo .picto-arceau {
+  width: 1rem;
+  height: 1rem;
+}
+
 #fixed-bottom {
   position: fixed;
   bottom: 0;

@@ -132,10 +132,20 @@ main #liste-stations {
 .station-dispo .arceaux, .velos {
 	font-size: 0.5rem;
 	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	grid-column-gap: 20px;
 }
 
 .station-dispo .arceaux .arceaux-compteur, .velos-compteur {
 	font-size: 1.25rem;
+	margin: 0;
+}
+
+.station-dispo .picto-arceau {
+	width: 1rem;
+	height: 1rem;
 }
 
 #fixed-bottom {
