@@ -127,6 +127,8 @@ main #liste-stations {
 	display: grid;
 	grid-template-columns: 40% 40%;
 	column-gap: 5%;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .station-dispo .arceaux, .velos {
