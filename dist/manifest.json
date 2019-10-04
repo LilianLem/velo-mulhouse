@@ -1,5 +1,5 @@
 {
-  "short_name": "VML",
+  "short_name": "Velo Mulhouse",
   "name": "Velo Mulhouse Live",
   "icons": [
     {
@@ -8,7 +8,7 @@
       "sizes": "256x256"
     }
   ],
-  "start_url": "/dist/?source=pwa",
+  "start_url": "/velo-mulhouse/dist/?source=pwa",
   "background_color": "#fff",
   "display": "standalone",
   "scope": "/dist/",
