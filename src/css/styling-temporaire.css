@@ -26,20 +26,16 @@ body {
   border: 2px solid #8f2b6d;
   color: var(--sec-color);
 }
-
-header {
+body header {
   background-color: #8f2b6d;
 }
-
-main {
+body main {
   background-color: var(--bg-color);
 }
-
-#fixed-top {
+body main #fixed-top {
   background-color: var(--bg-color);
 }
-
-p#dark-mode-switcher {
+body main #fixed-top p#dark-mode-switcher {
   cursor: pointer;
   font-size: 0.7rem;
   padding: 5px;
@@ -48,47 +44,37 @@ p#dark-mode-switcher {
   color: var(--reverse-sec-color);
   -webkit-transition: 0.25s ease-in-out;
 }
-
-main h1 {
+body main #fixed-top h1 {
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
-
-main img#liste-haut {
+body main #fixed-top img#liste-haut {
   transform: rotate(-90deg);
 }
-
-.station h2 {
+body main .station h2 {
   font-size: 0.75rem;
 }
-
-.station-dispo .arceaux, .velos {
+body main .station .station-dispo .arceaux, body main .station .station-dispo .velos {
   font-size: 0.5rem;
   text-transform: uppercase;
 }
-
-.station-dispo .arceaux .arceaux-compteur, .velos-compteur {
+body main .station .station-dispo .arceaux .arceaux-compteur, body main .station .station-dispo .arceaux .velos-compteur, body main .station .station-dispo .velos .arceaux-compteur, body main .station .station-dispo .velos .velos-compteur {
   font-size: 1.25rem;
 }
-
-#fixed-bottom {
+body main #fixed-bottom {
   background-color: var(--bg-color);
 }
-
-p#last-update {
-  font-size: 0.7rem;
-}
-
-main img#liste-bas {
+body main #fixed-bottom img#liste-bas {
   transform: rotate(90deg);
 }
-
-nav {
+body main #fixed-bottom p#last-update {
+  font-size: 0.7rem;
+}
+body main #fixed-bottom nav {
   background-color: #8f2b6d;
 }
-
-nav ul li p {
+body main #fixed-bottom nav ul li p {
   color: #fff;
   font-size: 0.8rem;
   text-transform: uppercase;
