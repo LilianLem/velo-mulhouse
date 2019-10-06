@@ -24,15 +24,15 @@ workbox.routing.registerRoute(
 workbox.precaching.precacheAndRoute([
   {
     "url": "css/positioning-temporaire.css",
-    "revision": "33e541df6949abcae5f913c9b1cbae2e"
+    "revision": "eb606a83fe01a2ad69b327069d72f322"
   },
   {
     "url": "css/styles.css",
-    "revision": "a749636428764ee25af5a4fc8c0b8832"
+    "revision": "b9c8eeb0d71ec6078660ff7dbe61a67f"
   },
   {
     "url": "css/styling-temporaire.css",
-    "revision": "ba627b704572620e645fbcc1bfe83c3a"
+    "revision": "f3a025d2dd5a4d1cc6e8fa01d347745d"
   },
   {
     "url": "fonts/weblysleekuisb.eot",
@@ -104,10 +104,10 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "5a85c7cbf53b1209314ff3b8188b7612"
+    "revision": "3edd292870bdea1d6bce082bee691930"
   },
   {
     "url": "scripts.js",
-    "revision": "8da5abc99ddf51b92596ebb9432f2851"
+    "revision": "d206aa231a3879b40f95ac6485f337be"
   }
 ]);
