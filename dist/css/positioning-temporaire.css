@@ -82,14 +82,14 @@ body main #liste-stations .station .station-dispo .arceaux, body main #liste-sta
   align-items: center;
   grid-column-gap: 20px;
 }
-body main #liste-stations .station .station-dispo .arceaux .arceaux-compteur, body main #liste-stations .station .station-dispo .arceaux .velos-compteur, body main #liste-stations .station .station-dispo .velos .arceaux-compteur, body main #liste-stations .station .station-dispo .velos .velos-compteur {
+body main #liste-stations .station .station-dispo .arceaux .compteur, body main #liste-stations .station .station-dispo .velos .compteur {
   margin: 0;
 }
-body main #liste-stations .station .station-dispo .arceaux .picto-arceau, body main #liste-stations .station .station-dispo .velos .picto-arceau {
+body main #liste-stations .station .station-dispo .arceaux .picto-arceau {
   width: 1rem;
   height: 1rem;
 }
-body main #liste-stations .station .station-dispo .arceaux .picto-velo, body main #liste-stations .station .station-dispo .velos .picto-velo {
+body main #liste-stations .station .station-dispo .velos .picto-velo {
   width: 1.5rem;
   height: 1.5rem;
 }

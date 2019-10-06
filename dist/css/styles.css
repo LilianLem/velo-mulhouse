@@ -140,7 +140,7 @@ main #liste-stations {
 	grid-column-gap: 20px;
 }
 
-.station-dispo .arceaux .arceaux-compteur, .velos-compteur {
+.station-dispo .compteur {
 	font-size: 1.25rem;
 	margin: 0;
 }

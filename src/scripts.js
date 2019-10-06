@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     function insertInHTML(stationId,stationName,stationAvailableBikeStands,stationAvailableBikes) {
     	let stationDiv = document.getElementById("station-"+stationId);
     	stationDiv.getElementsByTagName("h2")[0].innerHTML = stationName;
-    	stationDiv.getElementsByClassName("arceaux-compteur")[0].innerHTML = stationAvailableBikeStands;
-		stationDiv.getElementsByClassName("velos-compteur")[0].innerHTML = stationAvailableBikes;
+    	stationDiv.querySelector(".arceaux .compteur").innerHTML = stationAvailableBikeStands;
+		stationDiv.querySelector(".velos .compteur").innerHTML = stationAvailableBikes;
     }
 })
 

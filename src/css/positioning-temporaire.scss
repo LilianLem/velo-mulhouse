@@ -89,15 +89,19 @@ body {
 						align-items: center;
 						grid-column-gap: 20px;
 
-						.arceaux-compteur, .velos-compteur {
+						.compteur {
 							margin: 0;
 						}
+					}
 
+					.arceaux {
 						.picto-arceau {
 							width: 1rem;
 							height: 1rem;
 						}
+					}
 
+					.velos {
 						.picto-velo {
 							width: 1.5rem;
 							height: 1.5rem;
