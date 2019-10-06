@@ -23,7 +23,6 @@
 }
 
 body {
-  border: 2px solid #8f2b6d;
   color: var(--sec-color);
 }
 body header {

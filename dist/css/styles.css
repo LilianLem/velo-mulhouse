@@ -28,7 +28,6 @@
 
 body {
 	margin: 0;
-	border: 2px solid #8f2b6d;
 	color: var(--sec-color);
 }
 
@@ -50,15 +49,16 @@ header img {
 
 main {
 	background-color: var(--bg-color);
-	margin-top: 133px; /* Pour compenser la taille de header qui est en position fixed */
-	margin-bottom: 55px; /* Idem pour le footer */
+	width: 100%;
 	height: calc(100vh - 55px);
+	position: fixed;
+	top: 135px;
 }
 
 #fixed-top {
 	position: fixed;
 	top: 50px;
-	width: calc(100% - 4px);
+	width: 100%;
 	height: 85px;
 	background-color: var(--bg-color);
 }
@@ -106,7 +106,7 @@ main #liste-stations {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 2.5vh;
-	width: 100%;
+	margin: auto 5px auto;
 }
 
 #liste-stations .station {
@@ -158,7 +158,7 @@ main #liste-stations {
 #fixed-bottom {
 	position: fixed;
 	bottom: 0;
-	width: calc(100% - 4px);
+	width: 100%;
 	background-color: var(--bg-color);
 }
 
