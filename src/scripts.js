@@ -104,3 +104,5 @@ if(navigator.onLine){
 	    return await rawEtatStations.json();
 	}
 }
+
+export { setStationName }
